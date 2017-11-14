@@ -6,76 +6,11 @@
 body{
     height: 200vh;
 }
-.social-menu{
-    background: black;
-    width: 100%;
-    height: 2.25em;
-    padding: .25em;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.social-menu input{
-    background: whitesmoke;
-    margin-left: 10px;
-    height: 65%;
-    border-radius: 20px;
-    border: 0px;
-    background-image: url(../img/search.png);
-    background-repeat: no-repeat;
-    background-size: 16px;
-    background-position: 5px;
-    padding-left: 30px;
-    width: 20%;
-    outline: none;
-    transition: all .5s;
-}
-.social-menu input:focus{
-    background-color: white;
-    width: 35%;
-}
-.social-menu div{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    padding: .2em;
-}
-.social-menu a{
-    display: flex;
-    color: whitesmoke;
-    margin: 0 .3em;
-    font-size: 2em;
-    text-decoration: none;
-    transition: color .3s;
-    justify-content: center;
-    align-items: center;
-}
-.ic-facebook:hover{
-    color: #3b5998;
-    background-image: linear-gradient(#fff, #fff);
-    background-size: .61em .84em;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.ic-instagram:hover{
-    background-image: url(../img/ins.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    color: white;
-}
-.ic-youtube:hover{
-    color: #cc181e;
-    background-image: linear-gradient(#fff, #fff);
-    background-size: .57em .46em;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+
 
 /*--------sticky Menu--------*/
 .sticky{
-    height: 6em;
+    height: 5em;
     background: linear-gradient(135deg, #17e4d9 0%, #4c88ef 100%);
     box-shadow: 0 2px 6px;
     display: flex;
@@ -110,15 +45,12 @@ body{
     text-align: center;
 }
 .menu{
-    width: 45%;
-    height: 40%;
+    width: 50%;
+    height: 100%;
     position: relative;
-    top: 60%;
-    right: 2%;
 }
 .menu ul{
     display: flex;
-    height: 100%;
     align-items: center;
     justify-content: space-around;
     box-sizing: border-box;
@@ -128,23 +60,62 @@ body{
     height: 100%;
     transition: .35s;
 }
-.menu ul li a{
-    width: 100%;
-    height: 100%;
+.menu a{
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'quicksand', sans-serif;
-    font-size: 1em;
+    transition: color .2s;
     text-align: center;
 }
-#current{
-    background: #00688B;
+#social{
+    width: 20%;
+    position: absolute;
+    top: 8%;
+    right: 5%;
+    font-size: 1.8em;
+    text-align: center;
+    transition: color .2s;
+    justify-content: center;
 }
-.menu ul li:hover{
-    background: #00688B;
+
+#social .ic-facebook:hover{
+    color: #3b5998;
+    background-image: linear-gradient(#fff, #fff);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 56% 73%;
     
+}
+#social .ic-instagram:hover{
+    background-image: url(../img/ins.png);
+    background-repeat: no-repeat;
+    background-size: 81%;
+    background-position: top;
+}
+#social .ic-youtube:hover{
+    color: #cc181e;
+    background-image: linear-gradient(#fff, #fff);
+    background-size: 40% 40%;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+}
+#navigation{
+    justify-content: space-between;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    font-family: "quicksand", sans-serif;
+    font-size: .95em;
+    height: 2em;
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+#navigation a{
+    transition:.2s;
+}
+#navigation span{
+    padding-left: 5px;
+}
+#navigation a:hover{
+    border-bottom: 3px solid rgba(255,255,255,.9);
 }
 /*-----Responsive-----*/
